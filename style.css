@@ -1,0 +1,432 @@
+/**** stocker la police *******/
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+/**** stocker les couleur *****/
+
+:root{
+    --notre-jaune:#F0C934;
+    --notre-blue:#5674B6;
+    --notre-orange:#E4331D;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: var(--notre-blue);
+    line-height:10vh;
+}
+
+/********* partie user *****************/
+
+.user ul{
+    display: flex;
+    list-style: none;
+}
+.user ul li{
+    margin-right: 15px;
+}
+.user ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+.user ul li a:hover{
+    color: var(--notre-jaune);
+}
+/*********** partie logo ***********/
+
+.logo p{
+    color: white;
+    font-size: 1.2em;
+    font-family: "gugi";
+}
+
+/************** partie menu ***********/
+
+#menu{
+    
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--notre-blue);
+    height: 10vh;
+    line-height: 10vh;
+}
+
+/************ menu jaune*****************/
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    margin-left: 150px;
+}
+.list-menu ul li a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: var(--notre-blue);
+    transition: 0.5s;
+}
+.list-menu ul li a:hover{
+    color: var(--notre-jaune);
+}
+
+#menu .list-icon{
+    margin-right: 150px;
+}
+ .list-icon i{
+    border: 1px solid var(--notre-blue);
+    padding: 5px;
+    border-radius: 100%;
+    color: var(--notre-blue);
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#menu .list-icon i:hover{
+    color: var(--notre-jaune);
+}
+.list-icon .fa-user{
+    visibility: hidden;
+}
+/*********** bloque menu*********/
+.blokmenu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.color-menu{
+    background-color: var(--notre-jaune);
+}
+.color-menu-rouge{
+    background-color: var(--notre-orange);
+}
+
+.color-menu-rouge .list-icon i{
+    border: 1px solid var(--notre-jaune);
+    padding: 5px;
+    border-radius: 100%;
+    color: var(--notre-jaune);
+    margin-left: 15px;
+    cursor: pointer;
+}
+.color-menu-rouge ul li a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: var(--notre-jaune);
+    transition: 0.5s;
+}
+
+.blokmenu .fa-user{
+    visibility: visible;
+}
+
+/********* image accueil ********/
+
+#img{
+    background-image: url("./image/promo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 50px;
+}
+
+/************ nouveaute *******************/
+#new{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.img-box img{
+    width: 200px;
+}
+.img-box .icon{
+    margin-left: 25px;
+    
+}
+.img-box .icon i{
+    color: var(--notre-jaune);
+}
+.img-box p{
+    margin-left: 25px;
+    font-family: "gugi";
+}
+.img-box p span{
+    color: var(--notre-orange);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+/********* promo ******************/
+
+#promo h2{
+    text-align: center;
+    font-family: "gugi";
+    color: var(--notre-blue);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#promo h2::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: var(--notre-jaune);
+    display: block;
+    margin: 10px auto;
+}
+
+#promo img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#promo .promo{
+    display: flex;
+    justify-content: space-around;
+}
+#promo .img-promo{
+    width: 400px;
+}
+#promo h3{
+    font-family: "gugi";
+    color: var(--notre-jaune);
+    margin-top: 20px;
+}
+#promo .promo-text{
+    width: 400px;
+    color: var(--notre-blue);
+    line-height: 20px;
+    margin-top: 20px;
+}
+#promo button{
+    background-color: var(--notre-jaune);
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-family: "gugi";
+    color: #5674B6;
+}
+
+/********* produits *********/
+
+#produit h2{
+    font-family: "gugi";
+    text-align: center;
+    margin-top: 20px;
+    color: var(--notre-blue);
+}
+#produit h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: var(--notre-jaune);
+    margin: 10px auto;
+}
+#produit .produit img{
+    width: 250px;
+}
+#produit .produit{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#produit .icon{
+    text-align: center;
+    border: 1px solid var(--notre-jaune);
+    width: 150px;
+    padding: 3px 5px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+#produit i{
+    color: var(--notre-blue);
+}
+#produit{
+    text-align: center;
+    font-family: "gugi";
+    color: var(--notre-blue);
+    margin-bottom: 50px;
+    
+}
+#produit span{
+    font-family: "gugi";
+    color: #F0C934;
+    text-decoration: line-through;
+}
+
+/************ service *****************/
+
+#service h2{
+    font-family: "gugi";
+    text-align: center;
+    margin-top: 20px;
+    color: var(--notre-blue);
+}
+
+#service h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: var(--notre-orange);
+    margin: 10px auto;
+}
+
+#service img{
+    width: 100%;
+    margin-top: 50px;
+}
+#service h3{
+   margin-top: 150px;
+   text-align: center; 
+   font-family: "gugi";
+   color: var(--notre-orange);
+}
+#service .text p{
+    width: 500px;
+    margin-top: 20px;
+    color: var(--notre-blue);
+    text-align: center;
+}
+
+#service .service{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#service .service .imgservice{
+    width: 500px;
+}
+#service button{
+    background-color: var(--notre-orange);
+    color: var(--notre-jaune);
+    font-family: "gugi";
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+}
+/**************** contact ****************/
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+   
+    padding:10px 0 ;
+}
+
+#contact .contact{
+    width: 550px;
+    height: 350px;
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: var(--notre-orange);
+}
+#contact .contact input{
+    width: 500px;
+    height: 35px;
+    border-radius: 10px;
+    margin:10px;
+    padding: 5px 15px;
+}
+
+#contact .contact textarea{
+    width: 500px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#contact .contact button{
+    margin: 10px;
+    width: 150px;
+    padding: 5px;
+    background-color: var(--notre-jaune);
+    border-radius: 5px;
+    color: var(--notre-orange);
+    font-family: "gugi";
+}
+
+#contact .maps img{
+width: 500px;
+height: 350px;
+}
+
+/************ box ************/
+
+#box{
+    background-color: var(--notre-orange);
+    margin-top: 50px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#box .box{
+    display: flex;
+}
+#box i{
+    font-size: 45px;
+    color: #F0C934;
+    margin-right: 10px;
+}
+
+#box p{
+    color: #F0C934;
+}
+
+/************* payment ************/
+#payment{
+    display: block;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+#payment img{
+    width: 600px;
+}
+
+/************  copy *****************/
+
+#copyright{
+    text-align: center;
+    font-family: "gugi";
+    color: #5674B6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
